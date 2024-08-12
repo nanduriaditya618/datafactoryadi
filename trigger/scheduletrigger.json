@@ -1,0 +1,24 @@
+{
+	"name": "scheduletrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "copydataactivity",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 15,
+				"startTime": "2024-08-11T06:30:00",
+				"timeZone": "Mountain Standard Time"
+			}
+		}
+	}
+}
